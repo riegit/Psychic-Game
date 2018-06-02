@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="javascript/game.js"></script>
   </head>
 
@@ -49,23 +50,25 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>How to play</h2>
-            <p>
+            <p id="nomalaline">
               If the letter you typed matches with the psychic's one you get a point. <br>
-              You have 10 attempts to try. If you cannot make it then you lose.<br>
-              Once you reach the 10 attempts the numbers will be reset to play again,regarless of either you win or lose .
+              You have 10 attempts to try. If you cannot make it within the 10 attempts then you lose.
+              Once you reach the 10 attempts you will get a new 10-attempt to continue to play. To reset the game click on the reset game button.
               </p>
               <div id="game">
               <h2> Press any letter to start !</h2>
               <h3>Guess what letter I'm thinking of!</h3>
-              <p>Wins:</p>
-              <p>Losses:</p>
-              <p>Guesses Left:</p>
-              <p>Your Guesses so far:</p>
+              <p >Wins:</p>
+              <p >Losses:</p>
+              <p >Guesses Left:</p>
+              <p >Your Guesses so far:</p>
               </div>
+              <button onclick="myFunction()">Reset game</button><br><br>
               <p>To go back to the previous page click below</p>
-              <a href="#page-top" class="btn btn-circle js-scroll-trigger">
-                  <i class="fa fa-angle-double-down animated"></i>
+              <a href="#page-top" class="btn btn-circle js-scroll-trigger"> 
+              <i class="fa fa-angle-double-down animated"></i> 
               </a>
+              
           </div>
         </div>
       </div>

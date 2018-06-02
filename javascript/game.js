@@ -13,13 +13,16 @@ document.onkeyup = function(event) {
 
     var computerGuess = letterArray[Math.floor(Math.random() * letterArray.length)];
 
-    
+    function myFunction() {
+        location.reload();
+    }
    if (letterArray.indexOf(letter) > -1) {
 
        if (letter === computerGuess) {
            wins++;
            numGuesses = 10;
            userLetterArray = [];
+          
        }
 
        if (letter != computerGuess) {
@@ -32,7 +35,6 @@ document.onkeyup = function(event) {
        numGuesses = 10;
        losses ++;
        userLetterArray = [];
-
        
    }
 
@@ -48,4 +50,8 @@ document.onkeyup = function(event) {
 
    
    }
+   
 };
+function myFunction() {
+    location.reload();
+}
