@@ -9,7 +9,7 @@ var userLetterArray = [];
 
 document.onkeyup = function(event) {
 
-    var letter = event.key;
+    var letter = event.key.toLowerCase();
 
     var computerGuess = letterArray[Math.floor(Math.random() * letterArray.length)];
 
